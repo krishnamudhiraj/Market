@@ -7,6 +7,7 @@
     "react": "^16.3.1",
     "react-bootstrap": "^0.32.1",
     "react-dom": "^16.3.1",
+    "react-headroom": "^2.2.2",
     "react-intl": "^2.4.0",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.2.2",
@@ -21,6 +22,8 @@
   },
   "devDependencies": {
     "babel-plugin-react-intl": "^2.4.0",
-    "redux-devtools": "^3.4.1"
+    "node-sass": "^4.8.3",
+    "redux-devtools": "^3.4.1",
+    "sass-loader": "^7.0.1"
   }
 }
