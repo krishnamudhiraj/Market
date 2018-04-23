@@ -6,7 +6,7 @@ import { connect } from "react-redux";
 class AppOverView extends Component {
   render() {
     return (
-      <div className="animate ">
+      <div className="animate">
          HIIIIIIII
       </div>
     );
