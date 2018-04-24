@@ -1,6 +1,7 @@
-import React, { PropTypes } from "react";
+import React from "react";
 import "../../styles/common/mainContainer.scss";
 import Header from "../Header";
+import Footer from '../Footer'
 
 class Layout extends React.Component {
 //   static propTypes = {
@@ -14,6 +15,7 @@ class Layout extends React.Component {
         <section id="bodyContainer" className="uiView bodyContainer">
           {this.props.children}
         </section>
+        <Footer />
       </div>
     );
   }

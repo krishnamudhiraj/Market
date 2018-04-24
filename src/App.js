@@ -1,6 +1,5 @@
 import React from "react";
-import { Button } from "react-bootstrap";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import AppOverView from "./pages/AppsOverView";
 
 const App = () => (

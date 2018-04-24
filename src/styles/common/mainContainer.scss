@@ -1,3 +1,62 @@
 .bodyContainer {
-    background-color: '#000';
+    background-color: rgba(0, 0, 0, 0.9);
+    display: block;
+    height: auto;
+}
+
+.container {
+  padding: 0px;
+}
+.productDesc {
+    flex: 1;
+    align-items: flex-start;
+    // padding: 50px;
+    & .greenText {
+        color: green;
+    }
+    & .whiteText {
+        color: #fff;
+        font-size: 20px;
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    & .mainLeft {
+        padding: 50px;
+        align-items: flex-start;
+         & .greenText {
+        align-self: center;
+        color: green;
+        }
+        & .whiteText {
+            color: #fff;
+            font-size: 20px;
+        }
+        & .clsbutton {
+            background-color: #fff;
+            height: 50px;
+            border: 2px solid green;
+            border-radius: 10px;
+            padding: 5px;
+            padding-left: 30px;
+            padding-right: 30px;
+            font-size: 20px;
+            color: green;
+
+        }
+    }
+    & .mainRight {
+    height: 100vh;
+    transition: filter 500ms ease;
+    background-image: url(https://react-native.shop//static/media/elements.2ffd1c2b.jpg);
+    width: 50vw;
+    // height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
 }

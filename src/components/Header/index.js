@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import { FormattedMessage, defineMessages, intlShape } from "react-intl";
+// import { FormattedMessage, defineMessages, intlShape } from "react-intl";
 // import PropTypes from "prop-types";
-import { connect } from "react-redux";
+// import { connect } from "react-redux";
 import { Navbar, NavItem, MenuItem, Nav, NavDropdown } from "react-bootstrap";
-import { Link, withRouter } from "react-router-dom";
+// import { Link, withRouter } from "react-router-dom";
 import Headroom from "react-headroom";
 import "../../styles/common/header.scss";
 
