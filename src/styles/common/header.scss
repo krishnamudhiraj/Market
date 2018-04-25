@@ -1,23 +1,17 @@
-.headroom {
-  top: 0;
-  left: 0;
-  right: 0;
-  zIndex: 1;
+.navbar {
+  margin-bottom: 0px;
+  border-radius: 0px;
 }
-.headroom--unfixed {
-  position: relative;
-  transform: translateY(0);
-}
-.headroom--scrolled {
-  transition: transform 200ms ease-in-out;
-}
-.headroom--unpinned {
-  position: fixed;
-  transform: translateY(-100%);
-}
-.headroom--pinned {
-  position: fixed;
-  transform: translateY(0%);
+
+.navbar-inverse {
+  background-color: #000;
+  border-color: #000;
+  background-image: -webkit-linear-gradient(top, #000 0%, #000 100%);
+  & .navbar-brand {
+    color: #00E89D;
+    font-size: 25px;
+    font-weight: bold
+  }
 }
 
 // .navbarTop {

@@ -10,23 +10,15 @@ import "../../styles/common/header.scss";
 class Header extends Component {
   render() {
     return (
-      <Headroom
-        style={{
-          webkitTransition: "all .5s ease-in-out",
-          mozTransition: "all .5s ease-in-out",
-          oTransition: "all .5s ease-in-out",
-          transition: "all .5s ease-in-out"
-        }}
-      >
         <Navbar inverse collapseOnSelect>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="#brand">React-Bootstrap</a>
+              <a href="#brand">React/Flutter Market</a>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>
           <Navbar.Collapse>
-            <Nav>
+            {/*<Nav>
               <NavItem eventKey={1} href="#">
                 Link
               </NavItem>
@@ -52,10 +44,9 @@ class Header extends Component {
               <NavItem eventKey={2} href="#">
                 Link Right
               </NavItem>
-            </Nav>
+            </Nav>*/}
           </Navbar.Collapse>
         </Navbar>
-      </Headroom>
     );
   }
 }

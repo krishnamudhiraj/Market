@@ -1,9 +1,38 @@
 import React, { Component } from "react";
 // import _ from "lodash";
 // import { connect } from "react-redux";
+import scrollToComponent from "react-scroll-to-component";
 // import PropTypes from "prop-types";
 import { Grid, Row, Col, Button } from "react-bootstrap";
-import "../../styles/common/header.scss";
+import "../../styles/common/mainContainer.scss";
+
+const Apps = [
+  {
+    name: "starter Kit",
+    desc: "jsdfs shbsfdhs sdvskdfhs sdsd ",
+    price: 75
+  },
+  {
+    name: "starter Kit2",
+    desc: "jsdfs shbsfdhs sdvskdfhs sdsd ",
+    price: 175
+  },
+  {
+    name: "starter Kit3",
+    desc: "jsdfs shbsfdhs sdvskdfhs sdsd ",
+    price: 105
+  },
+  {
+    name: "starter Kit4",
+    desc: "jsdfs shbsfdhs sdvskdfhs sdsd ",
+    price: 115
+  },
+  {
+    name: "starter Kit5",
+    desc: "jsdfs shbsfdhs sdvskdfhs sdsd ",
+    price: 200
+  }
+];
 
 class AppOverView extends Component {
   render() {
@@ -26,16 +55,52 @@ class AppOverView extends Component {
           </Row>
         </Grid> */}
         <div className="main">
-         <div className="mainLeft">
-              <h1 className="greenText">Premium Starter Kits for all your solutions</h1>
-              <p className="whiteText">
+          <div className="mainLeft">
+            <h1 className="greenText">
+              Premium Starter Kits for all your solutions
+            </h1>
+            {/*<p className="whiteText">
               solutions for your next iOS and Android project.
-              </p>
-              <Button bsClass="clsbutton">
-                Explore
-              </Button>
-         </div>
-         <div className="mainRight" />
+              </p>*/}
+            <Button
+              onClick={() =>
+                scrollToComponent(this.AppComponent, {
+                  offset: -200,
+                  align: "top",
+                  duration: 500
+                })
+              }
+              bsClass="clsbutton"
+            >
+              Explore
+            </Button>
+          </div>
+          <div className="mainRight" />
+        </div>
+        <div
+          className="AppComponent"
+          ref={section => {
+            this.AppComponent = section;
+          }}
+        >
+          <h1 className="appsHeading">Starter Kits</h1>
+          <div className="appsContainer">
+            {
+              Apps.map((app, index) => (
+              <div className="singleApp">
+                <div className="backImage" />
+                <div calssName="appInfo">
+                  <div className="appDesc">
+                    <h1 className="whiteText">{app.name}</h1>
+                    <p className="whiteText">{app.desc}</p>
+                  </div>
+                  <div className="priceInfo">
+                    <h1 className="whiteText">$ {app.price}</h1>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     );
