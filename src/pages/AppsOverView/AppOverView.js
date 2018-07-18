@@ -3,6 +3,7 @@ import React, { Component } from "react";
 // import { connect } from "react-redux";
 import scrollToComponent from "react-scroll-to-component";
 // import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 import { Grid, Row, Col, Button } from "react-bootstrap";
 import "../../styles/common/mainContainer.scss";
 
@@ -87,16 +88,18 @@ class AppOverView extends Component {
           <div className="appsContainer">
             {Apps.map((app, index) => (
               <div className="singleApp">
-                <div className="backImage" />
-                <div calssName="appInfo">
-                  <div className="appDesc">
-                    <h1 className="whiteText">{app.name}</h1>
-                    <p className="whiteText">{app.desc}</p>
+                <Link to={`/app_desc/${app.price}`}>
+                  <div className="backImage" />
+                  <div calssName="appInfo">
+                    <div className="appDesc">
+                      <h1 className="whiteText">{app.name}</h1>
+                      <p className="whiteText">{app.desc}</p>
+                    </div>
+                    <div className="priceInfo">
+                      <h1 className="whiteText">$ {app.price}</h1>
+                    </div>
                   </div>
-                  <div className="priceInfo">
-                    <h1 className="whiteText">$ {app.price}</h1>
-                  </div>
-                </div>
+                </Link>
               </div>
             ))}
           </div>
@@ -107,3 +110,4 @@ class AppOverView extends Component {
 }
 
 export default AppOverView;
+// to={`/driver-profile/${item._id}`}
