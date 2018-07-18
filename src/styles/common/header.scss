@@ -4,13 +4,13 @@
 }
 
 .navbar-inverse {
-  background-color: #000;
-  border-color: #000;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-color: rgba(0, 0, 0, 0.5);
   background-image: -webkit-linear-gradient(top, #000 0%, #000 100%);
   & .navbar-brand {
-    color: #00E89D;
+    color: #00e89d;
     font-size: 25px;
-    font-weight: bold
+    font-weight: bold;
   }
 }
 

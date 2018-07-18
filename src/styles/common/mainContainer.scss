@@ -1,58 +1,57 @@
 .bodyContainer {
-    background-color: #000;
-    display: block;
-    height: auto;
+  background-color: rgba(0, 0, 0, 0.89);
+  display: block;
+  height: auto;
 }
 
 .container {
   padding: 0px;
 }
 .productDesc {
-    flex: 1;
-    align-items: flex-start;
-    // padding: 50px;
-    & .greenText {
-        color: #00E89D;
-    }
-    & .whiteText {
-        color: #fff;
-        font-size: 20px;
-    }
+  flex: 1;
+  align-items: flex-start;
+  // padding: 50px;
+  & .greenText {
+    color: #00e89d;
+  }
+  & .whiteText {
+    color: #fff;
+    font-size: 20px;
+  }
 }
 
 .main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    & .mainLeft {
-        padding: 50px;
-        align-items: flex-start;
-         & .greenText {
-        align-self: center;
-        color: #00E89D;
-        padding: 20px;
-        padding-left: 0px;
-        }
-        & .whiteText {
-            color: #fff;
-            font-size: 20px;
-        }
-        & .clsbutton {
-            background-color: #00E89D;
-            height: 50px;
-            border: 2px solid #00E89D;
-            border-radius: 4px;
-            padding: 5px;
-            padding-left: 30px;
-            padding-right: 30px;
-            font-size: 20px;
-            color: #fff;
-            outline: none;
-
-        }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  & .mainLeft {
+    padding: 50px;
+    align-items: flex-start;
+    & .greenText {
+      align-self: center;
+      color: #00e89d;
+      padding: 20px;
+      padding-left: 0px;
     }
-    & .mainRight {
+    & .whiteText {
+      color: #fff;
+      font-size: 20px;
+    }
+    & .clsbutton {
+      background-color: #00e89d;
+      height: 50px;
+      border: 2px solid #00e89d;
+      border-radius: 4px;
+      padding: 5px;
+      padding-left: 30px;
+      padding-right: 30px;
+      font-size: 20px;
+      color: #fff;
+      outline: none;
+    }
+  }
+  & .mainRight {
     height: 100vh;
     transition: filter 500ms ease;
     background-image: url(https://react-native.shop//static/media/elements.2ffd1c2b.jpg);
@@ -61,71 +60,71 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    }
+  }
 }
 
 .AppComponent {
-    text-align: center;
-    padding-top: 32px;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-bottom: 32px;
-    justify-content: center;
+  text-align: center;
+  padding-top: 32px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 32px;
+  justify-content: center;
 
-    .appsHeading {
+  .appsHeading {
     margin-left: 14%;
     margin-right: 14%;
-    color: #00E89D;
-    }
-    .appsContainer {
+    color: #00e89d;
+  }
+  .appsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    .singleApp {
+      margin: 16px;
+      margin-bottom: 30px;
+      cursor: pointer;
+      border-radius: 5px;
+      box-shadow: 0px 13px 15px 0px #00e89d, 0px 8px 8px 0px #00e89d,
+        0px 10px 12px -2px #00e89d;
+      overflow: visible;
+      width: 40%;
+      background-color: #00e89d;
+      .backImage {
+        background-image: url(https://react-native.shop//static/media/elements.2a779f94.jpg);
+        filter: blur(0px);
+        transition: filter 500ms ease;
+        width: 100%;
+        height: 248px;
+        // max-width: 400px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        display: block;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .appInfo {
+        width: 100%;
         display: flex;
-        flex-wrap: wrap;
+        max-width: 400px;
+        box-sizing: border-box;
         flex-direction: row;
-        justify-content: space-around;
-     .singleApp {
-        margin: 16px;
-        margin-bottom: 30px;
-        cursor: pointer;
-        border-radius: 5px;
-        box-shadow: 0px 13px 15px 0px #00E89D, 0px 8px 8px 0px #00E89D, 0px 10px 12px -2px #00E89D;
-        overflow: visible;
-        width: 40%;
-        background-color: #00E89D;
-        .backImage {
-            background-image: url(https://react-native.shop//static/media/elements.2a779f94.jpg);
-            filter: blur(0px);
-            transition: filter 500ms ease;
-            width: 100%;
-            height: 248px;
-            // max-width: 400px;
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
-            display: block;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
+        .appDesc {
+          flex-grow: 1;
+          text-align: left;
+          padding-right: 16px;
+          & .whiteText {
+            color: #fff;
+          }
         }
-        .appInfo {
-            width: 100%;
-            display: flex;
-            max-width: 400px;
-            box-sizing: border-box;
-            flex-direction: row;
-            .appDesc {
-               flex-grow: 1;
-                text-align: left;
-                padding-right: 16px;
-                & .whiteText {
-                    color: #fff;
-                }
-                
-            }
-            .priceInfo {
-               .whiteText {
-                    color: #fff;
-                }
-            }
+        .priceInfo {
+          .whiteText {
+            color: #fff;
+          }
         }
-     }
+      }
     }
+  }
 }

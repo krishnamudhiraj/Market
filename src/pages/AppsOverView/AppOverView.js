@@ -65,7 +65,7 @@ class AppOverView extends Component {
             <Button
               onClick={() =>
                 scrollToComponent(this.AppComponent, {
-                  offset: -200,
+                  offset: 0,
                   align: "top",
                   duration: 500
                 })
@@ -85,8 +85,7 @@ class AppOverView extends Component {
         >
           <h1 className="appsHeading">Starter Kits</h1>
           <div className="appsContainer">
-            {
-              Apps.map((app, index) => (
+            {Apps.map((app, index) => (
               <div className="singleApp">
                 <div className="backImage" />
                 <div calssName="appInfo">
